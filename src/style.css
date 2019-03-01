@@ -1,0 +1,47 @@
+h1, p {
+  font-family: Lato;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+.name {
+  display: inline-block;
+  font-weight: bold;
+  border-bottom: 2px black dashed;
+  cursor: pointer;
+}
+
+.name:hover {
+  background-color: lightgrey;
+}
+
+.username {
+  position: absolute;
+  right:5px;
+  justify-content: flex-end;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  font-family: Lato;
+  font-weight: bold;
+  margin-left: 15px;
+  min-width: 180px;
+  min-height:80px;
+  border:2px solid black;
+  background-color: white;
+  text-align: left;
+  padding: 5px 5px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltiptext span {
+  font-weight: lighter;
+}
